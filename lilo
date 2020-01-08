@@ -21,7 +21,7 @@
 if [[ -f `pwd`/sharedfuncs ]]; then
   source sharedfuncs
 else
-  echo "missing file: sharedfuncs"
+  echo "arquivo ausente: sharedfuncs"
   exit 1
 fi
 
@@ -29,16 +29,16 @@ fi
 #WELCOME {{{
 welcome(){
   clear
-  echo -e "${Bold}Welcome to the Archlinux U Install script by helmuthdu${White}"
+  echo -e "${Bold}Bem vindo a instalacao do Archlinux script criado por helmuthdu e tratuzido por adriano sales${White}"
   print_line
-  echo "Requirements:"
-  echo "-> Archlinux installation"
-  echo "-> Run script as root user"
-  echo "-> Working internet connection"
+  echo "Exigências:"
+  echo "-> instalacao do Archlinux "
+  echo "-> Rodar o script como root "
+  echo "-> Ter coneccao com a internet"
   print_line
-  echo "Script can be cancelled at any time with CTRL+C"
+  echo "O script pode ser cancelado a qualquer momento com CTRL + C"
   print_line
-  echo "http://www.github.com/helmuthdu/aui"
+  echo "http://www.github.com/helmuthdu/aui(ingles) ou http://www.github.com/leucilio/arch(traduzido para portugues)"
   print_line
   echo -e "\nBackups:"
   print_line
@@ -99,7 +99,7 @@ language_selector(){
   #}}}
   #}}}
   print_title "LOCALE - https://wiki.archlinux.org/index.php/Locale"
-  print_info "Locales are used in Linux to define which language the user uses. As the locales define the character sets being used as well, setting up the correct locale is especially important if the language contains non-ASCII characters."
+  print_info "As localidades são usadas no Linux para definir qual idioma o usuário usa. Como os códigos de idioma definem os conjuntos de caracteres que estão sendo usados também, a configuração do código de idioma correto é especialmente importante se o idioma contiver caracteres não ASCII."
   read -p "Default system language: \"$LOCALE\" [Y/n]: " OPTION
   case "$OPTION" in
     "n")

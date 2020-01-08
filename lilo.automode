@@ -17,8 +17,8 @@
 #-------------------------------------------------------------------------------
 
 #MAINMENU {{{
-  # 1) Basic Setup
-  # 2) Desktop Environment
+  # 1) Setup Basico
+  # 2) Ambiente de trabalho
   # 3) Accessories Apps
   # 4) Development Apps
   # 5) Office Apps
@@ -82,7 +82,7 @@
   #12) i3
   #13) OpenBox
   #14) Xmonad
-  DESKTOPENV="8"
+  DESKTOPENV="5"
   #KDE {{{
     # 1) Choqok
     # 2) Digikam
@@ -122,7 +122,7 @@
     # 1) Arc
     # 2) Numix
     # 3) Papirus
-    ICONS_THEMES="3"
+    ICONS_THEMES="1 2 3"
   #}}}
   #GTK THEMES {{{
     # 1) Arc
@@ -149,7 +149,7 @@
   # 8) Synapse
   # 9) Terminator
   #10) Tilix
-  ACCESSORIES_OPTIONS="4 10"
+  ACCESSORIES_OPTIONS="4 6 9 10"
 #}}}
 #DEVELOPEMENT {{{
   # 1) Atom
