@@ -137,7 +137,7 @@ select_device(){
   BOOT_MOUNTPOINT=$device
 }
 #}}}
-#CRIAR REGIME DE PARTIÇÃO {{{
+#CRIAR REGIME DE PARTIÇÃO. {{{
 create_partition_scheme(){
   LUKS=0
   LVM=0
