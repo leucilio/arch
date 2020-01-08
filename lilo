@@ -210,7 +210,7 @@ select_user(){
     done
     #}}}
     #EDITOR {{{
-    print_title "DEFAULT EDITOR"
+    print_title "ESCOLJA UM EDITOR"
     editors_list=("emacs" "nano" "vi" "vim" "neovim" "zile");
     PS3="$prompt1"
     echo -e "Select editor\n"
