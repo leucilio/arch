@@ -312,7 +312,7 @@ select_user(){
   PS3="$prompt1"
   echo "Avaliable Users:"
   if [[ $(( ${#users_list[@]} )) -gt 0 ]]; then
-    print_warning "WARNING: THE SELECTED USER MUST HAVE SUDO PRIVILEGES"
+    print_warning "AVISO: O USUÁRIO SELECIONADO DEVE TER SUDO PRIVILEGES"
   else
     echo ""
   fi
@@ -365,7 +365,9 @@ configure_sudo(){
 #AUR HELPER {{{
 choose_aurhelper(){
   print_title "AUR HELPER - https://wiki.archlinux.org/index.php/AUR_Helpers"
-  print_info "AUR Helpers are written to make using the Arch User Repository more comfortable."
+  print_info "Os ajudantes do AUR foram escritos para tornar mais confortável o uso do Arch User Repository
+
+."
   print_warning "\tNone of these tools are officially supported by Arch devs."
   aurhelper=("trizen" "yay" "aurman")
   PS3="$prompt1"
